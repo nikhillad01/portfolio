@@ -37,26 +37,6 @@ e. Others
       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   outline: 0;
-   font-size: 100%;
-   vertical-align: baseline;
-   background: transparent;
-}
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
@@ -444,7 +424,6 @@ dd { margin: 0 0 0 20px; }
    background-color: #E6E8EB;
 	color: #A9ADB2;
 }
-.pagination .prev, .pagination .next {}
 
 /*  5. Images  --------------------------------------------------------- */
 
@@ -452,8 +431,6 @@ img {
    max-width: 100%;
    height: auto;
 }
-img.pull-right { margin: 12px 0px 0px 18px; }
-img.pull-left { margin: 12px 18px 0px 0px; }
 
 /*  6. Buttons  --------------------------------------------------------- */
 
@@ -464,14 +441,14 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 16px/30px 'opensans-bold', sans-serif;
-   background: #11ABB0;
+   background: black;
    display: inline-block;
 	text-decoration: none;
    letter-spacing: 0;
    color: #fff;
 	padding: 12px 20px;
 	margin-bottom: 18px;
-   border: none;
+   border: solid 1px ;
    cursor: pointer;
    height: auto;
 
@@ -525,9 +502,17 @@ input::-moz-focus-inner {
 
 
 /*  7. Forms  --------------------------------------------------------- */
-
-form { margin-bottom: 24px; }
-fieldset { margin-bottom: 24px; }
+.center{
+   margin: auto;
+  width: 50%;
+  
+  padding: 10px;
+}
+@media only screen and (max-width: 768px){
+   .center{
+     width: 80%;
+   }
+}
 
 input[type="text"],
 input[type="password"],
@@ -535,23 +520,15 @@ input[type="email"],
 textarea,
 select {
    display: block;
-   padding: 18px 15px;
-   margin: 0 0 24px 0;
+   padding: 13px 10px;
    border: 0;
-   outline: none;
-   vertical-align: middle;
-   min-width: 225px;
-	max-width: 100%;
    font-size: 15px;
    line-height: 24px;
 	color: #647373;
 	background: #D3D9D9;
-
+   width: 100%;
 }
 
-/* select { padding: 0;
-   width: 220px;
-   } */
 
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -570,21 +547,6 @@ legend {
    color: #3d4145;
    display: block;
 }
-label span,
-legend span {
-	color: #8B9798;
-   font: 14px/24px 'opensans-regular', sans-serif;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    font-size: 15px;
-    color: #737373;
-}
-
-input[type="checkbox"] { display: inline; }
-
-/* ------------------------------------------------------------------ */
 /* d. Grid
 ---------------------------------------------------------------------
    gutter = 40px.

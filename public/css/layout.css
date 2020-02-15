@@ -30,10 +30,10 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/bg.jpeg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -169,7 +169,7 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
+   color:#838C95;
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -284,7 +284,9 @@ ul#nav li.current a { color: #F06000; }
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
-
+.skills-ul{
+   padding: 0px;
+}
 .bars {
 	width: 95%;
 	float: left;
@@ -295,23 +297,24 @@ ul#nav li.current a { color: #F06000; }
   	margin-top: 36px;
    list-style: none;
 }
-.bars li {
+/* .bars li {
    position: relative;
   	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
-  	border-radius: 3px;
-}
-.bars li em {
+  	 background: #ccc; 
+  	 height: 42px; 
+  	 border-radius: 3px; 
+}  */
+.skillname {
 	font: 15px 'opensans-bold', sans-serif;
    color: #313131;
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
    position: relative;
-	top: -36px;
+   margin-bottom: 10px;
+	/* top: -36px; */
 }
-.bar-expand {
+/* .bar-expand {
    position: absolute;
    left: 0;
    top: 0;
@@ -323,38 +326,16 @@ ul#nav li.current a { color: #F06000; }
   	height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
-}
+} */
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
-}
+
 .css {
   	width: 90%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
-}
+
+
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
@@ -830,33 +811,15 @@ call-to-action .button {
 
 
 /* contact form */
-#contact form { margin-bottom: 30px; }
-#contact label {
-   font: 15px/24px 'opensans-bold', sans-serif;
-   margin: 12px 0;
-   color: #EBEEEE;
-	display: inline-block;
-	float: left;
-   width: 26%;
-}
-#contact input,
-#contact textarea,
-#contact select {
-   padding: 18px 20px;
-	color: #eee;
-	background: #373233;
-	margin-bottom: 42px;
-	border: 0;
-	outline: none;
-   font-size: 15px;
-   line-height: 24px;
-   width: 65%;
-}
+#contact form { margin: 0 auto;
+   display: table;
+   width: 80%; }
+
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
-	color: #fff;
-	background-color: #11ABB0;
+	color: rgb(19, 18, 18);
+	background-color: #ebeeee;
 }
 #contact button.submit {
 	text-transform: uppercase;
@@ -875,7 +838,7 @@ call-to-action .button {
 	background: #fff;
 }
 #contact span.required {
-	color: #11ABB0;
+	color: #ebeeee;
 	font-size: 13px;
 }
 #message-warning, #message-success {
@@ -887,7 +850,7 @@ call-to-action .button {
    margin-left: 26%;
 }
 #message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
+#message-success { color: #ebeeee; }
 
 #message-warning i,
 #message-success i {

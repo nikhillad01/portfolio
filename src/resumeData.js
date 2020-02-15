@@ -1,77 +1,113 @@
 let resumeData = {
     "imagebaseurl":"https://rbhatia46.github.io/",
-    "name": "Rahul Bhatia",
-    "role": "Frontend Developer and Data Scientist",
+    "name": "Nikhil Lad",
+    "role": "Software Engineer",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "roleDescription": "I like dabbling in various parts of Frontend / Backend development , learn about new technologies and simply play games in my free time.",
     "socialLinks":[
         {
-          "name":"linkedin",
-          "url":"https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
+          "name":"LinkedIn",
+          "url":"https://www.linkedin.com/in/nikhil-lad-01/",
           "className":"fa fa-linkedin"
         },
         {
-          "name":"github",
-          "url":"http://github.com/rbhatia46",
+          "name":"Github",
+          "url":"https://github.com/nikhillad01",
           "className":"fa fa-github"
         },
         {
-          "name":"skype",
-          "url":"http://twitter.com/rbhatia46",
+          "name":"Twitter",
+          "url":"https://twitter.com/imNikhilLad",
           "className":"fa fa-twitter"
+        },{
+          "name":"Kaggle",
+          "url":"https://twitter.com/imNikhilLad",
+          "className":"fa fa-kaggle"
         }
       ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "address":"India",
-    "website":"https://rbhatia46.github.io",
+    "aboutme":"I’m extremely passionate about  development and design in all it’s forms . Aside from web development, I enjoy spending my time with my friends, brewing beer,  playing & watching sports (Cricket, Football, and mixed martial arts to name a few).",
+    "location":"Bengaluru,India",
+    "email":"nikhillad01@gmail.com",
     "education":[
       {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
+        "UniversityName":"Pillai HOC College of Engineering and Technology",
+        "specialization":"Bachelor's of Engineering (IT) ",
+        "MonthOfPassing":"May",
+        "YearOfPassing":"20218",
         "Achievements":"Some Achievements"
       },
       {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
+        "UniversityName":"Mumbai University",
+        "specialization":"Diploma in Information Technology",
+        "MonthOfPassing":"May",
+        "YearOfPassing":"2014",
         "Achievements":"Some Achievements"
       }
     ],
     "work":[
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
+        "CompanyName":"Navigus",
+        "specialization":"Software Engineer",
         "MonthOfLeaving":"Jan",
         "YearOfLeaving":"2018",
         "Achievements":"Some Achievements"
       },
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
+        "CompanyName":"Bridgelabz Solutions",
+        "specialization":"Full-Stack Developer",
+        "MonthOfLeaving":"April",
+        "YearOfLeaving":"2019",
         "Achievements":"Some Achievements"
-      }
+      },
+      
     ],
-    "skillsDescription":"Your skills here",
+    // "skillsDescription":"Your skills here",
     "skills":[
       {
-        "skillname":"HTML5"
+        "skillname":"Python",
+        "skillPercent":"75"
       },
       {
-        "skillname":"CSS"
+        "skillname":"Javascript / Typescript",
+        "skillPercent":"70"
+      },{
+        "skillname":"Django / REST Framework",
+        "skillPercent":"75"
+      }, {
+        "skillname":"Node Js",
+        "skillPercent":"50"
       },
       {
-        "skillname":"Reactjs"
+        "skillname":"Reactjs",
+        "skillPercent":"70"
+      },
+      {
+        "skillname":"Angular",
+        "skillPercent":"55"
+      },{
+        "skillname":"Database",
+        "skillPercent":"68"
+      },{
+        "skillname":"AWS",
+        "skillPercent":"65"
+      },{
+        "skillname":"Data Analytics",
+        "skillPercent":"60"
+      },
+      {
+        "skillname":"HTML5",
+        "skillPercent":"80"
+      },
+      {
+        "skillname":"CSS",
+        "skillPercent":"60"
       }
+     
     ],
     "portfolio":[
       {
-        "name":"project1",
+        "name":"Lavda",
         "description":"mobileapp",
         "imgurl":"images/portfolio/phone.jpg"
       },

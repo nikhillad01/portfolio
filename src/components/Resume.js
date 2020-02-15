@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {ProgressBar} from "./utils/ProgressBarComponent"
 export default  class Resume extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -21,9 +22,7 @@ export default  class Resume extends Component {
                           <p className="info">
                           {item.specialization}
                           <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
+                          
                        </div>
                     </div>
                   )
@@ -46,9 +45,7 @@ export default  class Resume extends Component {
                           <p className="info">
                           {item.specialization}
                           <span>&bull;</span> <em className="date">{item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
+                         
                        </div>
 
                     </div>
@@ -74,21 +71,26 @@ export default  class Resume extends Component {
 
    				<div className="bars">
 
-   				   <ul className="skills">
+   				   <ul className="skills-ul" style={{    padding: '0px'}}>
                 {
                   resumeData.skills && resumeData.skills.map((item) => {
                     return(
                       <li>
-                      <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-                      </span><em>{item.skillname}</em>
-                      </li>
+                        {/* <span> */}
+                          <div className="skillname">
+                            {item.skillname}
+                            </div>
+                      <ProgressBar percentage={item.skillPercent} />
+                      {/* </span> */}
+                      
+                      </li> 
                     )
                   })
                 }
 
    					</ul>
 
-   				</div>
+   				</div> 
 
    			</div>
 
