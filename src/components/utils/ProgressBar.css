@@ -1,12 +1,11 @@
-.progress-bar{
-    position: relative;
-    height: 30px;
-    width: 100%;
-    background: #ccc;
-
+.progress-bar {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  background: #ccc;
 }
-.filler{
-    background: #313131;
-    height: 100%;
-    transition: width .2s ease-in;
+.filler {
+  background: #313131;
+  height: 100%;
+  transition: width 0.2s ease-in;
 }
